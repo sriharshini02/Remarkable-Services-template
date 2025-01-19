@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Remarkable Services</title>
+    <title>Modern Remarkable Services</title>
     <style>
       /* Reset styles */
       body,
@@ -18,21 +18,21 @@
       }
 
       body {
-        font-family: Arial, sans-serif;
+        font-family: 'Arial', sans-serif;
         line-height: 1.6;
         color: #333;
-        background: linear-gradient(to bottom, #e3f2fd, #f4f4f9);
+        background: #c3b2eb;
         overflow-x: hidden;
       }
 
       header {
-        background: #333;
+        background: #2b3a4d; /* Dark teal color */
         color: #fff;
-        padding: 10px 20px;
+        padding: 20px 40px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
       }
 
       header h1 {
@@ -47,18 +47,18 @@
       }
 
       nav ul li {
-        margin: 0 10px;
+        margin: 0 20px;
       }
 
       nav ul li a {
         color: #fff;
         text-decoration: none;
-        font-size: 1em;
+        font-size: 1.1em;
         transition: color 0.3s ease;
       }
 
       nav ul li a:hover {
-        color: #ddd;
+        color: #00bfae; /* Accent color on hover */
       }
 
       .container {
@@ -67,53 +67,62 @@
         padding: 20px;
       }
 
+      .additional-section {
+        background: #ffffff;
+        border-radius: 12px;
+        padding: 25px;
+        margin-bottom: 50px;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+      }
+
+      .about-us,
+      .contact-form {
+        background-color: #f9f9f9; /* Lighter gray for contrast */
+        border-radius: 12px;
+        padding: 30px;
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+      }
+
       .services {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 20px;
         justify-content: center;
+        margin-bottom: 50px;
       }
 
       .service {
         background: #fff;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        padding: 20px;
+        border-radius: 12px;
+        padding: 25px;
         text-align: center;
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
       }
 
       .service:hover {
-        transform: translateY(-5px);
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+        transform: translateY(-8px);
+        box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
       }
 
       .service img {
         width: 100px;
         height: 100px;
         object-fit: cover;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
+        border-radius: 50%;
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
       }
 
       .service h2 {
-        font-size: 1.5em;
-        margin-bottom: 10px;
-        color: #555;
+        font-size: 1.6em;
+        margin-bottom: 15px;
+        color: #2b3a4d; /* Dark teal for consistency */
       }
 
       .service p {
-        font-size: 1em;
+        font-size: 1.1em;
         color: #666;
-      }
-
-      .additional-section {
-        background: #fff;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        padding: 20px;
-        margin-bottom: 20px;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
       }
 
       .contact-form {
@@ -127,44 +136,46 @@
       .contact-form label {
         font-weight: bold;
         text-align: left;
+        color: #444;
       }
 
       .contact-form input,
       .contact-form textarea,
       .contact-form button {
-        padding: 10px;
+        padding: 15px;
         border: 1px solid #ddd;
-        border-radius: 5px;
-        font-size: 1em;
+        border-radius: 8px;
+        font-size: 1.1em;
       }
 
       .contact-form textarea {
         resize: vertical;
-        height: 100px;
+        height: 120px;
       }
 
       .contact-form button {
-        background: #333;
+        background: #00bfae; /* Accent color */
         color: #fff;
         cursor: pointer;
         transition: background 0.3s ease;
+        font-size: 1.2em;
       }
 
       .contact-form button:hover {
-        background: #555;
+        background: #008f80; /* Slightly darker shade on hover */
       }
 
       footer {
-        background: #333;
+        background: #2b3a4d; /* Dark teal color */
         color: #fff;
         text-align: center;
-        padding: 10px 0;
-        margin-top: 20px;
+        padding: 20px 0;
+        margin-top: 40px;
         box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
       }
 
       footer p {
-        font-size: 0.9em;
+        font-size: 1em;
       }
 
       @media (max-width: 768px) {
@@ -193,7 +204,7 @@
     </header>
 
     <div class="container">
-      <div id="about-us" class="additional-section">
+      <div id="about-us" class="additional-section about-us">
         <h2>About Us</h2>
         <p>At Remarkable Services, we are committed to providing exceptional solutions tailored to your needs. Our expertise spans across diverse fields, ensuring quality and innovation in every project.</p>
         <p>Our core services include:
@@ -257,15 +268,31 @@
         </div>
       </div>
 
-      <div id="contact" class="additional-section">
-        <h2>Contact</h2>
-        <p>Feel free to reach out to us for inquiries or collaborations!</p>
-        <form class="contact-form">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required placeholder="Your Name" />
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required placeholder="Your Email" />
-          <label for="type">Type</label>
+      <div id="contact" class="additional-section" style="background-color: #ffffff; border-radius: 15px; box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);">
+        <h2 style="color: #2b3a4d;">Contact</h2>
+        <p style="color: #555;">Feel free to reach out to us for inquiries or collaborations!</p>
+        <form class="contact-form" style="display: flex; flex-direction: column; gap: 20px;">
+          <label for="name" style="color: #444; font-weight: bold;">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Your Name"
+            style="padding: 15px; border: 1px solid #ddd; border-radius: 8px; font-size: 1.1em;"
+          />
+
+          <label for="email" style="color: #444; font-weight: bold;">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Your Email"
+            style="padding: 15px; border: 1px solid #ddd; border-radius: 8px; font-size: 1.1em;"
+          />
+
+          <label for="type" style="color: #444; font-weight: bold;">Type</label>
           <div>
             <input
               type="radio"
@@ -273,23 +300,35 @@
               name="type"
               value="enquiry"
               required
+              style="margin-right: 8px;"
             />
-            <label for="enquiry">Enquiry</label>
+            <label for="enquiry" style="color: #666;">Enquiry</label>
             <input
               type="radio"
               id="collaboration"
               name="type"
               value="collaboration"
               required
+              style="margin-right: 8px; margin-left: 20px;"
             />
-            <label for="collaboration">Collaboration</label>
+            <label for="collaboration" style="color: #666;">Collaboration</label>
           </div>
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required placeholder="Your Message"></textarea>
 
-          <button type="submit">Submit</button>
+          <label for="message" style="color: #444; font-weight: bold;">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            required
+            placeholder="Your Message"
+            style="padding: 15px; border: 1px solid #ddd; border-radius: 8px; font-size: 1.1em; resize: vertical; height: 120px;"
+          ></textarea>
+
+          <button type="submit" style="background: #00bfae; color: #fff; font-size: 1.2em; cursor: pointer; padding: 15px; border: none; border-radius: 8px; transition: background 0.3s ease;">
+            Submit
+          </button>
         </form>
       </div>
+
     </div>
 
     <footer>
