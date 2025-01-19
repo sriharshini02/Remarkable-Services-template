@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remarkable Services</title>
+    <style>
+      /* Reset styles */
+      body,
+      h1,
+      h2,
+      p,
+      ul,
+      li {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: linear-gradient(to bottom, #e3f2fd, #f4f4f9);
+        overflow-x: hidden;
+      }
+
+      header {
+        background: #333;
+        color: #fff;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      header h1 {
+        font-size: 2em;
+        font-weight: bold;
+        margin-right: 20px;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+      }
+
+      nav ul li {
+        margin: 0 10px;
+      }
+
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1em;
+        transition: color 0.3s ease;
+      }
+
+      nav ul li a:hover {
+        color: #ddd;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+      }
+
+      .services {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        justify-content: center;
+      }
+
+      .service {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .service:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+      }
+
+      .service img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        margin-bottom: 15px;
+      }
+
+      .service h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        color: #555;
+      }
+
+      .service p {
+        font-size: 1em;
+        color: #666;
+      }
+
+      .additional-section {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .contact-form label {
+        font-weight: bold;
+        text-align: left;
+      }
+
+      .contact-form input,
+      .contact-form textarea,
+      .contact-form button {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1em;
+      }
+
+      .contact-form textarea {
+        resize: vertical;
+        height: 100px;
+      }
+
+      .contact-form button {
+        background: #333;
+        color: #fff;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      .contact-form button:hover {
+        background: #555;
+      }
+
+      footer {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 20px;
+        box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      footer p {
+        font-size: 0.9em;
+      }
+
+      @media (max-width: 768px) {
+        .services {
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+      }
+
+      @media (max-width: 480px) {
+        .service {
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Remarkable Services</h1>
+      <nav>
+        <ul>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div id="about-us" class="additional-section">
+        <h2>About Us</h2>
+        <p>At Remarkable Services, we are committed to providing exceptional solutions tailored to your needs. Our expertise spans across diverse fields, ensuring quality and innovation in every project.</p>
+        <p>Our core services include:
+          <ul>
+            <li>Web Development: Crafting high-quality, responsive websites.</li>
+            <li>Graphic Design: Eye-catching designs that make an impact.</li>
+            <li>Digital Marketing: Boosting your online presence effectively.</li>
+            <li>SEO Optimization: Proven techniques to grow your traffic.</li>
+          </ul>
+        </p>
+      </div>
+
+      <div id="services" class="services">
+        <div class="service">
+          <img
+            src="https://tse3.mm.bing.net/th?id=OIP.IuXwBcAz0Kv5-HY0wX6MygHaFj&pid=Api&P=0&h=180"
+            alt="Service 1"
+          />
+          <h2>Web Development</h2>
+          <p>Crafting modern and responsive websites for businesses and individuals.</p>
+        </div>
+        <div class="service">
+          <img
+            src="https://tse4.mm.bing.net/th?id=OIP.PvUk1W_g6SaZoDtOjzzlewHaDN&pid=Api&P=0&h=180"
+            alt="Service 2"
+          />
+          <h2>Graphic Design</h2>
+          <p>Creating stunning visuals that leave lasting impressions.</p>
+        </div>
+        <div class="service">
+          <img
+            src="https://tse3.mm.bing.net/th?id=OIP.kgM70ENBNiQ9bfHaHMYkUgHaEr&pid=Api&P=0&h=180"
+            alt="Service 3"
+          />
+          <h2>SEO Optimization</h2>
+          <p>Enhancing your online presence with proven strategies.</p>
+        </div>
+        <div class="service">
+          <img
+            src="https://tse2.mm.bing.net/th?id=OIP.QcASAa4wJISuJXH1LT2T5wHaE8&pid=Api&P=0&h=180"
+            alt="Service 4"
+          />
+          <h2>Digital Marketing</h2>
+          <p>Helping your business reach the right audience effectively.</p>
+        </div>
+        <div class="service">
+          <img
+            src="https://tse4.mm.bing.net/th?id=OIP.WjGRdMeiefZGAuQMXBLsTAHaFE&pid=Api&P=0&h=180"
+            alt="Service 5"
+          />
+          <h2>Mobile App Development</h2>
+          <p>Building user-friendly mobile applications for iOS and Android.</p>
+        </div>
+        <div class="service">
+          <img
+            src="https://tse4.mm.bing.net/th?id=OIP.pjcLse7q4oFSVh0uTSfyCAHaE7&pid=Api&P=0&h=180"
+            alt="Service 6"
+          />
+          <h2>Content Creation</h2>
+          <p>Delivering high-quality, engaging content tailored to your needs.</p>
+        </div>
+      </div>
+
+      <div id="contact" class="additional-section">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to us for inquiries or collaborations!</p>
+        <form class="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required placeholder="Your Name" />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="Your Email" />
+          <label for="type">Type</label>
+          <div>
+            <input
+              type="radio"
+              id="enquiry"
+              name="type"
+              value="enquiry"
+              required
+            />
+            <label for="enquiry">Enquiry</label>
+            <input
+              type="radio"
+              id="collaboration"
+              name="type"
+              value="collaboration"
+              required
+            />
+            <label for="collaboration">Collaboration</label>
+          </div>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Remarkable Services. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
